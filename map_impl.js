@@ -122,7 +122,7 @@ break;
         ];
     
     var value = document.createElement('span');
-          value.innerHTML = '<b>Legend</b>:';
+          value.innerHTML = '<b>Legend(dn)</b>:';
 var item = document.createElement('div');
      item.appendChild(value);
           legend.appendChild(item);
