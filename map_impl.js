@@ -72,6 +72,9 @@ var data3=[];
             var hoveredStateId = null;
 //pk.eyJ1Ijoib2J1Y2hlbCIsImEiOiJjamhqZTZsOWkwN25iM2Fxd282N2FlZDVqIn0.bkOU5gAio8eKnmKHlntJsA
   mapboxgl.accessToken = 'pk.eyJ1Ijoib2J1Y2hlbCIsImEiOiJjanlrY3diNzIwZDdxM25uN2owN2c5ZHpiIn0.XzMbcbHF6H42u0Uxo1L8lg';
+
+
+
 map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/light-v10',
@@ -88,6 +91,13 @@ center: [-82.447303,37.753574]
 map.addControl(new mapboxgl.NavigationControl(), 'top-left');      
 map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
 //map.addControl(new mapboxgl.Directions(), 'bottom-left');
+map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
+
 
 fetch('states5.json').then(res => res.json()) 
 .then(data8 => {             
