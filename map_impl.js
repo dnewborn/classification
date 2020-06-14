@@ -87,7 +87,7 @@ center: [-82.447303,37.753574]
             
 map.addControl(new mapboxgl.NavigationControl(), 'top-left');      
 map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
-map.addControl(new mpaboxgl.Directions(), 'bottom-left');
+map.addControl(new mapboxgl.Directions(), 'bottom-left');
 
 fetch('states5.json').then(res => res.json()) 
 .then(data8 => {             
@@ -216,7 +216,7 @@ var item = document.createElement('div');
     */
     
     var value2 = document.createElement('span');
-    value2.innerHTML = "<br>Updated by DN: "+data0[0]["date"];
+    value2.innerHTML = "<br>Updated (dd1): "+data0[0]["date"];
      value2.style.textAlign="center !important";
     value2.style.margin="auto";
     var item2 = document.createElement('div');
