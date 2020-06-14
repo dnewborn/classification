@@ -214,7 +214,7 @@ var item = document.createElement('div');
     */
     
     var value2 = document.createElement('span');
-    value2.innerHTML = "<br>Updated: 14 June by DN;
+    value2.innerHTML = "<br>Updated by DN: "+data0[0]["date"];
      value2.style.textAlign="center !important";
     value2.style.margin="auto";
     var item2 = document.createElement('div');
