@@ -91,12 +91,12 @@ center: [-82.447303,37.753574]
 map.addControl(new mapboxgl.NavigationControl(), 'top-left');      
 map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
 //map.addControl(new mapboxgl.Directions(), 'bottom-left');
-map.addControl(
-new MapboxDirections({
-accessToken: mapboxgl.accessToken
-}),
-'top-left'
-);
+/*map.addControl(
+         new MapboxDirections({
+                  accessToken: mapboxgl.accessToken
+                  }),
+         'top-left'
+         );*/
 
 
 fetch('states5.json').then(res => res.json()) 
