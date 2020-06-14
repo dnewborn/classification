@@ -122,7 +122,7 @@ break;
         ];
     
     var value = document.createElement('span');
-          value.innerHTML = '<b>Legend(dn)</b>:';
+          value.innerHTML = '<b>Legend</b>:';
 var item = document.createElement('div');
      item.appendChild(value);
           legend.appendChild(item);
@@ -214,7 +214,7 @@ var item = document.createElement('div');
     */
     
     var value2 = document.createElement('span');
-    value2.innerHTML = "<br>Updated: "+data0[0]["date"];
+    value2.innerHTML = "<br>Updated: 14 June by DN;
      value2.style.textAlign="center !important";
     value2.style.margin="auto";
     var item2 = document.createElement('div');
